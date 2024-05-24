@@ -2,8 +2,17 @@ package cuentas;
 
 import cuentas.CCuenta;
 
-public class Main {
+/**
+ * Clase principal, contiene el main
+ * @author Rocío Decuzzi Fernández
+ */
 
+public class Main {
+    
+    /**
+     * Método principal
+     * @param args 
+     */
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
@@ -12,7 +21,11 @@ public class Main {
         System.out.println("El saldo actual es " + saldoActual);
         operaciones(cuenta1);
     }    
-
+    
+    /**
+     * Método con las llamadas a los métodos retirar e ingresar.
+     * @param cuenta1 Cuenta donde se realizan las operaciones.
+     */
     private static void operaciones(CCuenta cuenta1) {
         double saldoActual;
         // Operaciones de ingreso y retiro
